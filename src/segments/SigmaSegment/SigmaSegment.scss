@@ -1,0 +1,11 @@
+@import 'styles/dominant/bootstrap-custom.scss';
+
+.sigmaSegmentList {
+  flex-direction: column;
+
+  @include media-breakpoint-up(xl) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+  }
+}

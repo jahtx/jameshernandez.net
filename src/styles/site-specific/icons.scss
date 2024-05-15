@@ -1,0 +1,66 @@
+// Imports
+@import 'styles/variables/main-colors.scss';
+@import 'styles/variables/gatsby-template.scss';
+
+// Shared styles for icons
+@mixin icon-styles {
+  width: 1.4em;
+  path {
+    fill: var(--primary-contrast-color);
+  }
+}
+
+// Base styles for icons
+.socialIcon {
+  margin: 0 $iconDefaultMargin 0 0;
+}
+
+.linkIcon,
+.regularIcon,
+.resumeIcon,
+.regularIconSmall,
+.calendarIcon,
+.generalArrowIcon {
+  @include icon-styles;
+
+  // Specific overrides
+  &.resumeIcon {
+    path.opposite {
+      fill: var(--primary-background);
+    }
+    rect {
+      fill: var(--primary-contrast-color);
+    }
+  }
+
+  &.generalArrowIcon {
+    width: 1em;
+    padding: 0 0 0.1em 0;
+    &--left {
+      margin-right: $iconDefaultMargin;
+    }
+    &--right {
+      margin-left: $iconDefaultMargin;
+    }
+  }
+
+  &.calendarIcon {
+    width: 1.1em;
+    margin-right: 0.4em;
+    padding-bottom: 0.2em;
+  }
+
+  &.regularIconSmall {
+    width: 1.1em;
+  }
+}
+
+// Specific icon styles
+.rssLogo {
+  width: 2.3em;
+}
+
+.poundSignWrapper {
+  width: 0.8em;
+  margin-right: 0.2em;
+}

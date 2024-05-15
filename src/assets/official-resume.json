@@ -1,0 +1,278 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "James A. Hernandez",
+    "label": "Senior User Experience Designer / Front-end Developer",
+    "image": "",
+    "email": "social@jahtx.com",
+    "phone": "",
+    "url": "https://jameshernandez.dev",
+    "summary": "Intuitive developer and designer for mobile and desktop web applications. Application of new development tools, services, and methodologies. Dedicated team contributor and coordinator. Explores and analyzes industry best practices for user experience and front-end development. 10+ years of development experience and 6+ years of experience with direct-to-consumer products.",
+    "location": {
+      "countryCode": "US",
+      "address": "United States"
+    },
+    "coreStrengths": [
+      "User Interface/User Experience Design",
+      "Front-end Development with JavaScript, React, CSS, and HTML5",
+      "Rapid prototyping",
+      "Product Strategy and Planning"
+    ],
+    "operatingSystems": [
+      "UNIX/Linux",
+      "MacOS/Windows",
+      "Photoshop/Illustrator CC",
+      "Sketch",
+      "Figma",
+      "Invision",
+      "Axure",
+      "SiteSpect"
+    ],
+    "languagesAndTech": [
+      "React / Redux",
+      "JavaScript",
+      "Git",
+      "HTML5 / CSS3",
+      "SASS",
+      "JQuery",
+      "Docker",
+      "Angular 2"
+    ],
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jameshernandez",
+        "url": "https://www.linkedin.com/in/jameshernandez/"
+      },
+      {
+        "network": "Twitter",
+        "username": "hernandezjames",
+        "url": "https://twitter.com/hernandezjames"
+      }
+    ]
+  },
+
+  "work": [
+    {
+      "name": "Noblr",
+      "position": "Senior User Experience Designer",
+      "startDate": "2018-09-30",
+      "endDate": "2020-10-31",
+      "startDateClean": "2022",
+      "endDateClean": "2023",
+      "highlights": [],
+      "summary": "Senior designer for start-up insurance mobile app and web presence using Figma, Sketch, and MUI. Documentation and maintaining libraries for developers. Lead UX designer for several efforts to include new user functionality requiring the creation of wireframes and high-fidelity prototypes, user-flow diagrams, and in-house artifacts to showcase functionality to business and development team using HTML, CSS, JavaScript. Developed and updated component library in Figma to standardize items for consistency.",
+      "url": "https://www.linkedin.com/company/insight-global/",
+      "location": "San Antonio, Texas Area",
+      "technologies": [
+        "Figma",
+        "Sketch",
+        "Zeplin",
+        "React",
+        "MUI",
+        "HTML5",
+        "CSS3"
+      ]
+    },
+    {
+      "name": "Outside Analytics",
+      "position": "Senior Software Engineer",
+      "startDate": "2018-09-30",
+      "endDate": "2020-10-31",
+      "startDateClean": "2021",
+      "endDateClean": "2022",
+      "highlights": [],
+      "summary": "Senior developer on an agile team creating a web-based application to display paths on a global map based on satellite data. New interfaces were created to turn on/off specific satellites, weather maps, hide/show paths and save locations. Developed modular, React-based TypeScript utilizing REST and socket.io APIs and customizing design and styling with Sketch, Illustrator, and developing in SASS and HTML5.",
+      "url": "https://outsideanalytics.com",
+      "location": "San Antonio, Texas Area",
+      "technologies": [
+        "Figma",
+        "Sketch",
+        "React",
+        "Redux",
+        "TypeScript",
+        "SASS",
+        "HTML5",
+        "CSS3"
+      ]
+    },
+    {
+      "name": "Insight Global",
+      "position": "Frontend Developer/Designer",
+      "startDate": "2018-09-30",
+      "endDate": "2020-10-31",
+      "startDateClean": "2018",
+      "endDateClean": "2020",
+      "highlights": [],
+      "summary": "Adapting and developing for a Department. of Education web and mobile based application for students to manage student loan information. Collaborating with User Experience to design, prototype, and implement comprehensive page flows for loan simulations and applying for loan forgiveness.",
+      "url": "https://www.linkedin.com/company/insight-global/",
+      "location": "San Antonio, Texas Area",
+      "clients": [
+        {
+          "name": "Accenture / U.S. Department of Education",
+          "summary": "Front-end engineer and designer on a development team for the U.S. Department of Education Student Loans web application. The browser client required Angular 2 and Bootstrap integration while the backend used Java/Spring and Oracle. Augmented and implemented designs from UX teams for mobile and desktop screens. Incorporated REST APIs using RX.js. Experience with SCRUM Agile methodologies utilizing daily stand-ups on 4-week sprints.",
+          "technologies": [
+            "Figma",
+            "Sketch",
+            "Angular",
+            "RXJS",
+            "Gitlab",
+            "SASS",
+            "HTML5",
+            "CSS3"
+          ]
+        },
+
+        {
+          "name": "Diligent Consulting / U.S. Air Force",
+          "summary": "The client had previously developed a custom application for the U.S. Air Force to manage promotions using an outdated browser plug-in (Silverlight). Requisition of a new version, built using HTML5 and a modern web framework, required our team to enhance the user experience and functionality of the application while maintaining previous requirements and capability. Enhanced the user interface with industry standard components and developed in React/Redux and chief administrator for version control/Git best practices.",
+          "technologies": [
+            "Figma",
+            "Sketch",
+            "React",
+            "Redux",
+            "Bootstrap",
+            "SASS",
+            "HTML5",
+            "CSS3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ampcus Inc",
+      "position": "User Experience Designer, Front-end Engineer",
+      "startDate": "2016-12-31",
+      "endDate": "2017-12-31",
+      "startDateClean": "2016",
+      "endDateClean": "2017",
+      "highlights": [],
+      "summary": "Led a full user-experience design process from requirements gathering to implementation. Fully researched metrics, products, and content then prioritized according to user engagement, surveys, and executive initiatives. Created wireframes for user testing/evaluation and final composites of all major landing pages. Structured code environment and templating system incorporating modern-SASS/JavaScript libraries and frameworks. Operated as senior front-end developer and designer.",
+      "url": "https://www.ampcus.com/",
+      "location": "San Antonio, Texas Area",
+      "clients": [
+        {
+          "name": "Randolph-Brooks Federal Credit Union",
+          "summary": "Led a full user-experience design process from requirements gathering to implementation. Fully researched metrics, products, and content then prioritized according to user engagement, surveys, and executive initiatives. Created wireframes for user testing/evaluation and final composites of all major landing pages. Structured code environment and templating system incorporating modern-SASS/JavaScript libraries and frameworks. Operated as senior front-end developer and designer.",
+          "technologies": ["AngularJS", "JQuery", "SASS", "HTML5", "CSS3"]
+        }
+      ]
+    },
+    {
+      "name": "Visage Collaborative, Inc.",
+      "position": "Founding User Experience Designer and Developer",
+      "startDate": "2014-12-31",
+      "endDate": "2015-12-31",
+      "startDateClean": "2014",
+      "endDateClean": "2015",
+      "highlights": [],
+      "summary": "As a small team of entrepreneurs motivated to innovate for our clients, all of us assumed multiple roles and responsibilities for a new business. Guided the design process for our early clients and development teams. Project manager and lead developer for web application products and other deliverables. Managed AWS/Azure hosting production environments. Advocated our business towards more profitable and sustainable projects. Sales and engagement lead for new clients. Business process manager for employee/contractor utilization and accounting.",
+      "url": "https://visagecollaborative.com/",
+      "location": "San Antonio, Texas Area",
+      "technologies": ["WordPress", "Linux"]
+    },
+    {
+      "name": "USAA",
+      "position": "Creative Designer I",
+      "startDate": "2010-12-31",
+      "endDate": "2014-12-31",
+      "startDateClean": "2010",
+      "endDateClean": "2014",
+      "highlights": [],
+      "summary": "Executed design process for multiple web and mobile projects including USAA’s internal Enterprise Correspondence Tool, a web application to facilitate member communication through postal and digital channels. Engineered HTML/CSS/JavaScript functional wireframing and pair programmed with Java development team. Mobile app wireframing and front-end development. Programmed and applied A/B testing.",
+      "url": "https://www.linkedin.com/company/usaa/",
+      "location": "San Antonio, Texas Area",
+      "technologies": ["YUI", "JavaScript", "HTML5", "CSS3"]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Texas State University",
+      "area": "",
+      "studyType": "",
+      "startDate": "1992-12-31",
+      "endDate": "1997-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "User Interface",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Experience",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "XHTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "USAA",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Front-end",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Usability",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Interface Design",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [
+    {
+      "name": "óscar gutiérrez jr.",
+      "reference": "James was valued as a user interface designer at USAA.  He was constantly researching best design and development practices in XHTML, CSS, and JavaScript.  He would frequently skip lunch to read books such as PPK on JavaScript, among others.  James will be missed."
+    }
+  ],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}

@@ -1,0 +1,73 @@
+@import 'styles/dominant/bootstrap-custom.scss';
+@import 'styles/variables/gatsby-template.scss';
+
+.sigmaButtonEnclosure {
+  width: 100%;
+  &:not(:first-child) {
+    margin-top: 1rem;
+    @include media-breakpoint-up(xl) {
+      margin-top: 0;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    width: 48%;
+  }
+  @at-root .sigmaButtonSheath {
+    &:hover .sigmaButton {
+      top: -5px;
+      transition: top ease 0.3s;
+      box-shadow: var(--box-shadow);
+    }
+
+    .sigmaButton {
+      transition: ease 0.3s;
+      top: 0;
+      box-shadow: none;
+      border-radius: 0.4rem;
+      box-sizing: border-box;
+      color: var(--primary-contrast-color);
+      border: 2px solid var(--secondary-contrast-color);
+
+      &__first {
+        width: 30%;
+        @at-root .rbfcu-back {
+          background-image: url('images/sigma/rb-back.jpg');
+        }
+        @at-root .usaa-back {
+          background-image: url('images/sigma/usaa-back.jpg');
+        }
+        @at-root .noblr-back {
+          background-image: url('images/sigma/noblr-back.jpg');
+        }
+
+        border-top-left-radius: 0.3rem;
+        border-bottom-left-radius: 0.3rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 270%;
+        @include media-breakpoint-up(sm) {
+          background-size: 300%;
+        }
+        @include media-breakpoint-up(xl) {
+          background-size: 500%;
+        }
+      }
+      $lastPadding: 0.5rem;
+      &__last {
+        width: 70%;
+        padding: $lastPadding $lastPadding $lastPadding 1.1rem;
+        @include media-breakpoint-up(md) {
+          width: 100%;
+          padding: 1rem;
+        }
+        p {
+          margin: 0;
+        }
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

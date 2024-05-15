@@ -1,0 +1,16 @@
+@import 'styles/variables/gatsby-template.scss';
+
+.techCard {
+  margin: 1rem 0.2rem;
+  height: 2rem;
+  font-family: 'Open Sans';
+  a {
+    color: var(--primary-contrast-color);
+    text-decoration: none;
+  }
+
+  &__icon {
+    width: 2.5rem;
+    max-height: 2rem;
+  }
+}

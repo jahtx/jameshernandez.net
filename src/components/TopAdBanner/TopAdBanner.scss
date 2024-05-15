@@ -1,0 +1,85 @@
+@import 'styles/variables/gatsby-template.scss';
+@import 'styles/packages/hamburgers/hamburgers.scss';
+@import 'styles/dominant/bootstrap-custom.scss';
+
+.topAdBannerExpanded {
+  // background-color: var(--topBanner-back);
+  background: var(--header-gradient);
+}
+.topAdBanner {
+  justify-content: space-between;
+  @include media-breakpoint-up(md) {
+    justify-content: space-between;
+  }
+  &__first {
+    h1 {
+      .jhBannerLogo {
+        width: 4rem;
+        path {
+          fill: var(--primary-contrast-color);
+        }
+      }
+    }
+  }
+  .adNav {
+    height: 4rem;
+    &__list {
+      display: none;
+      @include media-breakpoint-up(md) {
+        display: block;
+        margin: 0 0.3rem;
+      }
+      li {
+        a {
+          padding: 0 0.8rem;
+          text-decoration: none;
+          font-size: 1rem;
+          color: var(--primary-contrast-color);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .adNavAnchor {
+    display: block;
+    visibility: visible;
+    @include media-breakpoint-up(md) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  .adNavHam {
+    margin: 6px 10px 0 10px;
+  }
+  ul.adNavDrop {
+    right: 0;
+    top: 52px;
+    visibility: hidden;
+    opacity: 0;
+    // transition: visibility 3s, opacity 3s; // Added transition
+    transition: visibility 0s linear 0.11s, opacity 0.11s linear;
+    &--show {
+      visibility: visible;
+      opacity: 1;
+      z-index: 300;
+      transition-delay: 0s;
+      box-shadow: var(--box-shadow);
+    }
+    li {
+      a {
+        background: var(--primary-background);
+        padding: 0.2rem 2rem;
+        border: 1px solid var(--secondary-background);
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: var(--primary-contrast-color);
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

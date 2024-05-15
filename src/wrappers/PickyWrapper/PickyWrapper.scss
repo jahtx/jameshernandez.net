@@ -1,0 +1,19 @@
+@import 'styles/dominant/bootstrap-custom.scss';
+@import 'styles/variables/gatsby-template.scss';
+
+.pickyModalContainer {
+  flex-direction: row;
+  flex-basis: 25%;
+  max-width: 25%;
+  position: relative;
+  // &--thumb {
+  //   height: 300px;
+  //   overflow: hidden;
+  // }
+  &__imgBorder {
+    border: 1px solid silver;
+    height: 300px;
+    max-width: 120px;
+    overflow: hidden;
+  }
+}

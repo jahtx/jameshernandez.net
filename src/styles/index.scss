@@ -1,0 +1,54 @@
+// This is where the main styles for the sandbox come together
+
+// it binds dominant styles (always present) with "treatment" specific styles
+// "dominant" is a replacement for "includeInaAll"
+
+@import './variables/main-colors.scss';
+@import './variables/gatsby-template.scss';
+@import './site-specific/general.scss';
+@import './site-specific/remark.scss';
+@import './site-specific/icons.scss';
+
+:root {
+  --scale: 0.1;
+  --space: 8vmin;
+}
+
+// site default colors are in main-colors.scss
+a {
+  color: var(--contrast-link-color);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.2em;
+}
+
+a.non-blue {
+  color: var(--primary-contrast-color);
+  text-decoration: none;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.2em;
+}
+
+body {
+  background-color: var(--primary-background);
+  font-family: $default-font;
+}
+
+.gatsby-highlight code {
+  font-size: 1em !important;
+}
+
+// prism overrides
+
+code[class*='language-'],
+pre[class*='language-'] {
+  font-family: 'Ubuntu Mono', Monaco, Consolas, 'Courier New', Courier,
+    monospace !important;
+  line-height: 1.3 !important;
+}
+
+.language-text {
+  color: rgb(214, 51, 132) !important;
+  background-color: transparent !important;
+  border: none !important;
+}

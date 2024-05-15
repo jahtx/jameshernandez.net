@@ -1,0 +1,497 @@
+@import 'styles/dominant/index.scss';
+@import 'styles/dominant/bootstrap-custom.scss';
+@import 'styles/variables/gatsby-template.scss';
+
+// blog default specific items, throughout the site, placed here for convenience
+
+li.breadcrumb-item,
+li.breadcrumb-item.active {
+  color: var(--primary-contrast-color);
+  &:before {
+    color: var(--primary-contrast-color);
+  }
+}
+
+h3 a.postNameHeader {
+  color: var(--primary-contrast-color);
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+}
+// ARTICLE LIST PAGE
+
+.articleList {
+  &__featuredImage {
+    width: 13rem;
+    margin: 0 0 10px 10px;
+  }
+}
+
+// TAG BUBBLES
+
+li.ordinaryTag {
+  a {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 0.2em;
+    color: var(--primary-contrast-color);
+    margin-left: 0.5rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// PAGINATION LINKS
+
+.paginationNav {
+  column-gap: 1em;
+  row-gap: 1em;
+
+  &.big {
+    flex-direction: column;
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+  }
+
+  &__section {
+    &.smallWidth {
+      width: 10em;
+    }
+    a.link {
+      border: 3px solid var(--secondary-contrast-color);
+      background-color: var(--secondary-background);
+      border-radius: 0.5em;
+      height: 4em;
+      padding: 0.5em;
+      color: var(--primary-contrast-color);
+      .leadIn {
+        text-transform: uppercase;
+        font-size: 0.8em;
+      }
+      &:hover {
+        filter: var(--brightness-hover);
+      }
+    }
+    a.small {
+      height: 3em;
+    }
+  }
+}
+
+// TAG LIST TEMPLATE
+
+.tagPageContainer {
+  flex-direction: column-reverse;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+  &__articles {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 75%;
+    }
+  }
+  &__tagCloud {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      display: flex;
+      width: 25%;
+      padding: 2em 0 0 0em;
+    }
+    .tagCloudFull {
+      visibility: hidden;
+      display: none;
+      @include media-breakpoint-up(md) {
+        visibility: visible;
+        display: flex;
+      }
+    }
+  }
+}
+.tagCloudDropdown {
+  visibility: visible;
+  display: block;
+  margin: 0 0 2em 0;
+  @include media-breakpoint-up(md) {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+// Blog Template
+
+.normalLink {
+  color: var(--primary-contrast-color);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.2em;
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+}
+
+.sharpLinkIcon {
+  width: 1em;
+  margin: 0 0 0 $iconDefaultMargin;
+  padding: 0 0 0.1em 0;
+}
+
+#sharpLinkIconSvg g path {
+  fill: var(--primary-contrast-color);
+}
+
+// SEARCH PAGE
+
+.elasticPartsContainer {
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+  &__left {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 75%;
+      padding: 1em 0;
+    }
+  }
+  &__right {
+    width: 100%;
+    padding: 1em 0;
+    .btn {
+      height: 2.3em;
+    }
+    @include media-breakpoint-up(md) {
+      width: 25%;
+      padding: 1em;
+    }
+  }
+}
+
+.error {
+  color: $red;
+}
+
+.gatsby-highlight pre {
+  border: 1px solid $gray-700;
+  border-radius: 0.5em;
+}
+
+a.button {
+  border: 3px solid var(--secondary-contrast-color);
+  background-color: var(--secondary-background);
+  border-radius: 0.5em;
+  padding: 0.5em 1.1em;
+  text-decoration: none;
+  color: var(--primary-contrast-color);
+  .leadIn {
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+  &:hover {
+    filter: var(--brightness-hover);
+    cursor: pointer;
+  }
+}
+
+.adjImage {
+  @include media-breakpoint-up(sm) {
+    height: fit-content;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 200px;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--primary-contrast-color) !important;
+}
+
+.homemade-container-sm {
+  padding: 0 12px;
+  @include media-breakpoint-up(sm) {
+    max-width: 540px;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 720px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 960px;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: 1140px;
+  }
+  @include media-breakpoint-up(xxl) {
+    max-width: 1320px;
+  }
+}
+
+.inner-container {
+  width: 95%;
+  @include media-breakpoint-up(lg) {
+    width: 70%;
+  }
+}
+
+.blogListSegment {
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: stretch;
+
+  @include media-breakpoint-up(md) {
+    flex-flow: row wrap;
+    align-content: space-between;
+  }
+}
+
+.tagListSegment {
+  flex-flow: column;
+  row-gap: 1rem;
+  @include media-breakpoint-up(md) {
+    flex-flow: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  a.left {
+    span::before {
+      content: '← ';
+    }
+  }
+  a.right {
+    span::after {
+      content: ' →';
+    }
+  }
+}
+
+// modal
+
+.noCursorNoBorder {
+  cursor: auto !important;
+  border: none !important;
+}
+
+// Modal
+
+.darkmode-bs-modal {
+  .modal-content {
+    background-color: var(--modal-background);
+    .modal-header {
+      color: var(--primary-contrast-color);
+      border-bottom-color: var(--tertiary-background);
+      padding: 0.5rem 0.9rem;
+    }
+    .modal-footer {
+      border-top-color: var(--tertiary-background);
+      margin: 0;
+      padding: 0.3rem;
+    }
+  }
+}
+
+div.bs-modal {
+  .modal-content {
+    background-color: $LIGHTMODE_Secondary-bckg;
+    .modal-header {
+      color: $LIGHTMODE_Primary-contrast;
+      border-bottom-color: $LIGHTMODE_Tertiary-bckg;
+    }
+    .modal-footer {
+      border-top-color: $LIGHTMODE_Tertiary-bckg;
+      margin: 0;
+      padding: 0.3rem;
+    }
+  }
+  .gatsby-image-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+div.special-bs-modal {
+  margin: 0 auto;
+  height: 98%;
+  &--mobile {
+    max-width: 300px;
+  }
+  &--desktop {
+    max-width: 800px;
+  }
+  .modal-content {
+    background-color: var(--modal-background);
+    .modal-header {
+      color: var(--primary-contrast-color);
+      border-bottom-color: var(--tertiary-background);
+      padding: 0.5rem 0.9rem;
+    }
+    .modal-body {
+      margin: 0;
+      padding: 0.3rem;
+    }
+    .modal-footer {
+      border-top-color: var(--tertiary-background);
+    }
+    .modal-footer {
+      margin: 0;
+      padding: 0.3rem;
+    }
+  }
+}
+
+.initial-image-border {
+  border: 1px solid var(--secondary-contrast-color);
+}
+
+.initialPostSize {
+  &--universal {
+    // cursor: pointer;
+    object-position: top;
+    img {
+      object-position: top;
+    }
+  }
+}
+
+div.mediumImageModal {
+  max-width: 700px;
+  margin: 1rem auto;
+}
+div.largeImageModal {
+  max-width: 1000px;
+  margin: 1rem auto;
+}
+div.xlargeImageModal {
+  max-width: 1800px;
+  margin: 1rem auto;
+}
+
+div.modal-fullscreen-lg-down div.modal-content {
+  border-radius: var(--bs-modal-inner-border-radius);
+}
+
+.artRows {
+  row-gap: 20px;
+}
+
+// CompBox styles
+
+// Mixin for common styles
+@mixin techItemStyles {
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5rem;
+  margin: 0 0.2rem;
+}
+
+// Base styles for .techItem
+.techItem {
+  @include techItemStyles;
+  a {
+    text-decoration: none;
+    color: $gray-900;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &--typescript {
+    background-color: #b6cef2;
+  }
+  &--gatsby {
+    background-color: #d4aef0;
+  }
+  &--react {
+    background-color: #9dd5f1;
+  }
+  &--node {
+    background-color: #b1f698;
+  }
+  &--bootstrap {
+    background-color: #ffaaeb;
+  }
+  &--hamburgers {
+    background-color: #ffaaeb;
+  }
+  &--webpack {
+    background-color: #abecf9;
+  }
+}
+
+// Dark theme variant
+.dark-techItemsCont {
+  .techItem {
+    @include techItemStyles;
+    a {
+      text-decoration: none;
+      color: $gray-200;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &--typescript {
+      background-color: #1f5ab4;
+    }
+    &--gatsby {
+      background-color: #5b0999;
+    }
+    &--react {
+      background-color: #215f7e;
+    }
+    &--node {
+      background-color: #3b7028;
+    }
+    &--bootstrap {
+      background-color: #7a2b62;
+    }
+    &--webpack {
+      background-color: #128796;
+    }
+  }
+}
+
+.gatsby-highlight-code-line {
+  // background-color: #feb;
+  // background-color: $gray-800;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #f99;
+}
+
+// Contact
+
+.captchaCont {
+  justify-content: center;
+  @include media-breakpoint-up(sm) {
+    justify-content: space-between;
+  }
+}
+
+.sendButton {
+  width: 100%;
+  @include media-breakpoint-up(sm) {
+    width: 10rem;
+  }
+}
+// error color
+.formGroup {
+  :nth-child(3) {
+    color: $red;
+    font-weight: bold;
+  }
+}
+
+.form-label {
+  padding: 1rem 0 0 0;
+  margin: 0;
+}

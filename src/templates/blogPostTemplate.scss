@@ -1,0 +1,103 @@
+// this style is just so no error shows up, not used for anything
+
+@import 'styles/variables/main-colors.scss';
+@import 'styles/dominant/bootstrap-custom.scss';
+@import 'styles/variables/gatsby-template.scss';
+
+.blogPostImage {
+  width: 200px;
+  @include media-breakpoint-up(md) {
+    max-height: 140px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 200px;
+  }
+}
+
+.blogPostContainer {
+  h2 {
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 1.3em;
+    margin: 1em 0 0.3em 0;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 1.1em;
+    margin: 1em 0 0.3em 0;
+    font-weight: 500;
+  }
+}
+
+.featuredBox {
+  flex-direction: column;
+  background-color: var(--secondary-background);
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+
+  &__left {
+    width: 100%;
+    padding: 1em;
+    @include media-breakpoint-up(md) {
+      width: 30%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 30%;
+    }
+  }
+  &__right {
+    padding: 0 1em 1em 1em;
+    @include media-breakpoint-up(md) {
+      width: 100%;
+      padding: 1em;
+    }
+  }
+}
+ol.breadcrumb {
+  margin: 0.2em 0 0 0;
+  padding: 0;
+}
+.breadcrumb-truncate {
+  width: 12em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @include media-breakpoint-up(sm) {
+    width: 18em;
+  }
+  @include media-breakpoint-up(md) {
+    width: 28em;
+  }
+}
+
+.copyLine {
+  a {
+    font-size: 0.7rem;
+    color: var(--secondary-contrast-color);
+    text-decoration: none;
+    border: 1px solid var(--secondary-contrast-color);
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem;
+    background-color: var(--primary-background);
+  }
+}
+
+.tableOfContents {
+  padding: 1.5em 1em 1em 1.5em;
+  background-color: var(--secondary-background);
+  ul {
+    list-style-type: '-  ';
+    li {
+      margin: 0.3em 0;
+    }
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  a {
+    text-decoration: underline;
+    color: var(--primary-contrast-color);
+  }
+}

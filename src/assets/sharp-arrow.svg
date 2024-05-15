@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="sharpArrowSvg" viewBox="0 0 77 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1935,-157)">
+        <path id="sharp-arrow" d="M1935.3,200.792L1972.74,200.792L1972.98,218.253L2011.69,188.567L1972.16,157.824L1972.39,174.468L1935.3,174.468L1935.3,200.792Z" style="fill-rule:nonzero;"/>
+    </g>
+</svg>

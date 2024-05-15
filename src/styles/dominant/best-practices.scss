@@ -1,0 +1,88 @@
+// bestpractices.scss is where primary HTML tags are defined
+// and some styles I've deemed the best to keep in all projects
+@import '../variables/main-colors.scss';
+@import 'styles/variables/gatsby-template.scss';
+
+// UTILITIES
+
+@mixin border_guide {
+  // box-shadow: inset 0px 0px 0px 0.5px var(--line-utility);
+}
+
+div,
+li,
+a,
+ul,
+section {
+  @include border_guide;
+}
+
+// BEST PRACTICES
+
+html {
+  font-size: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $heading-font;
+}
+
+.no-break {
+  white-space: pre;
+}
+
+.not-underline {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ol.breadcrumb {
+  background-color: transparent;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+$utilities: (
+  'font-size': (
+    property: font-size,
+    class: fsz,
+    values: (
+      18: 1.8rem,
+      13: 1.3rem,
+      12: 1.2rem,
+      11: 1.1rem,
+      10: 1rem,
+      9: 0.9rem,
+      8: 0.8rem,
+      7: 0.7rem,
+      6: 0.6rem,
+      5: 0.5rem,
+    ),
+  ),
+  'width': (
+    property: width,
+    class: imgw,
+    values: (
+      3: 3rem,
+    ),
+  ),
+);
+
+// use list-unstyled
+
+// ACCESSIBILITY
+
+.screenreader-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

@@ -1,0 +1,166 @@
+@import 'styles/variables/main-colors.scss';
+
+$default-font: 'DM Sans', 'Trebuchet MS', Sans-serif, 'Bebas Neue';
+$heading-font: 'DM Sans', 'Trebuchet MS', Sans-serif, 'Bebas Neue';
+
+$iconDefaultMargin: 0.5em;
+
+$some-kind-of-color: #ec9418;
+$dark-orange: #e84723;
+$plain-green: #0e9727;
+$covidnomics-green: #009840;
+$stdesign-scheme-turq: #108599;
+$rbfcu_color: #0e2e70;
+$fav_radius: 0.8rem;
+
+$light-green: #daffdd;
+$light-red: #ffdada;
+
+// James Hernandez Portfolio Colors
+
+$jameshernandez-dark-general: #1c2561;
+$jameshernandez-yellow: #f79d1e;
+$jameshernandez-teal: #108599;
+$jameshernandez-dark-teal: #0b5e6d;
+$jameshernandez-light-green: #72aa1e;
+
+// Covidnomics Colors
+
+$covidnomics-purple: #492792;
+$mysite-orange: #e84723;
+$mysite-turquoise: #108599;
+$mysite-appleRed: #e11156;
+// DEFAULT LINK TEXT COLORS
+
+$LIGHTMODE_blue-links: $blue;
+$DARKMODE_blue-links: #7ab6ff;
+
+// MAIN COLORS
+
+// all colors playground
+$allAround-x-Primary-mainCOLOR: $gray-800;
+$allAround-x-Secondary-mainCOLOR: $gray-800;
+$allAround-x-Tertiary-mainCOLOR: #30549c;
+$allAround-x-Quaternary-mainCOLOR: #db870f;
+$allAround-x-DropShadow-color: #333333a1;
+$allAround-x-nav-links: $white;
+
+$LIGHTMODE_Primary-mainCOLOR: $allAround-x-Primary-mainCOLOR;
+$LIGHTMODE_Secondary-mainCOLOR: $allAround-x-Secondary-mainCOLOR;
+$LIGHTMODE_Tertiary-mainCOLOR: $allAround-x-Tertiary-mainCOLOR;
+$LIGHTMODE_Quaternary-mainCOLOR: $allAround-x-Quaternary-mainCOLOR;
+
+$DARKMODE_Primary-mainCOLOR: $allAround-x-Primary-mainCOLOR;
+$DARKMODE_Secondary-mainCOLOR: $allAround-x-Secondary-mainCOLOR;
+$DARKMODE_Tertiary-mainCOLOR: $allAround-x-Tertiary-mainCOLOR;
+$DARKMODE_Quaternary-mainCOLOR: $allAround-x-Quaternary-mainCOLOR;
+
+$LIGHTMODE_nav-links: $allAround-x-nav-links;
+$DARKMODE_nav-links: $allAround-x-nav-links;
+
+// LIGHT MODE
+
+// contrasts: (dark tones)
+$LIGHTMODE_High-contrast: $black;
+$LIGHTMODE_Primary-contrast: $gray-900;
+$LIGHTMODE_Secondary-contrast: $gray-500;
+$LIGHTMODE_Tertiary-contrast: $gray-400;
+
+// backgrounds
+$LIGHTMODE_Primary-bckg: $gray-100;
+$LIGHTMODE_Secondary-bckg: $gray-200;
+$LIGHTMODE_Tertiary-bckg: $gray-500;
+
+// DARK MODE
+
+//  contrasts: (light tones)
+$DARKMODE_High-contrast: $gray-100;
+$DARKMODE_Primary-contrast: $gray-400;
+$DARKMODE_Secondary-contrast: $gray-600;
+$DARKMODE_Tertiary-contrast: $gray-500;
+
+// backgrounds
+
+$DARKMODE_Primary-bckg: $gray-900;
+$DARKMODE_Secondary-bckg: $gray-800;
+$DARKMODE_Tertiary-bckg: $gray-700;
+
+$standard-brightness: brightness(110%);
+
+// Apply throughout all SCSS
+
+:root {
+  --primary-contrast-color: #{$LIGHTMODE_Primary-contrast};
+  --secondary-contrast-color: #{$LIGHTMODE_Secondary-contrast};
+
+  --primary-main-color: #{$LIGHTMODE_Primary-mainCOLOR}; // top navigation
+  --secondary-main-color: #{$LIGHTMODE_Secondary-mainCOLOR}; // bottom footer
+  --tertiary-main-color: #{$LIGHTMODE_Tertiary-mainCOLOR}; // portfolio color
+  --quaternary-main-color: #{$LIGHTMODE_Quaternary-mainCOLOR};
+  --main-nav-links: #{$LIGHTMODE_nav-links};
+
+  --primary-background: #{$LIGHTMODE_Primary-bckg};
+  --secondary-background: #{$LIGHTMODE_Secondary-bckg};
+  --tertiary-background: #{$LIGHTMODE_Tertiary-bckg};
+  --modal-background: #{$LIGHTMODE_Primary-bckg};
+  --contrast-link-color: #{$LIGHTMODE_blue-links};
+  --icon-brightness-hover: brightness(300%);
+  --brightness-hover: brightness(110%);
+  --line-utility: #{$gray-300};
+  --drop-shadow: #{$allAround-x-DropShadow-color};
+  --box-shadow: 0 10px 13px var(--drop-shadow);
+  --topBanner-back: #{$LIGHTMODE_Primary-bckg};
+  --header-gradient: linear-gradient(
+    180deg,
+    rgba(201, 217, 253, 1) 0%,
+    rgba(248, 249, 250, 1) 83%
+  );
+  --footer-gradient: linear-gradient(
+    0deg,
+    rgba(201, 217, 253, 1) 0%,
+    rgba(248, 249, 250, 0) 83%
+  );
+}
+
+body.dark {
+  --primary-contrast-color: #{$DARKMODE_Primary-contrast};
+  --secondary-contrast-color: #{$DARKMODE_Secondary-contrast};
+
+  --primary-main-color: #{$DARKMODE_Primary-mainCOLOR}; // top navigation
+  --secondary-main-color: #{$DARKMODE_Secondary-mainCOLOR}; // bottom footer
+  --tertiary-main-color: #{$DARKMODE_Tertiary-mainCOLOR}; // portfolio color
+  --quaternary-main-color: #{$DARKMODE_Quaternary-mainCOLOR};
+  --main-nav-links: #{$DARKMODE_nav-links};
+
+  --primary-background: #{$DARKMODE_Primary-bckg};
+  --secondary-background: #{$DARKMODE_Secondary-bckg};
+  --tertiary-background: #{$DARKMODE_Tertiary-bckg};
+  --modal-background: #{$DARKMODE_Secondary-bckg};
+  --contrast-link-color: #{$DARKMODE_blue-links};
+  --icon-brightness-hover: brightness(70%);
+  --brightness-hover: brightness(70%);
+  --line-utility: #{$gray-800};
+  --drop-shadow: rgba(0, 0, 0, 0);
+  // --box-shadow: 0 0.3rem 0.3rem $gray-600;
+  --box-shadow: 0 10px 13px var(--drop-shadow);
+  --topBanner-back: #{$DARKMODE_Primary-bckg};
+  --header-gradient: linear-gradient(
+    180deg,
+    rgba(39, 53, 84, 1) 0%,
+    rgba(33, 37, 41, 1) 65%
+  );
+  // --header-gradient: linear-gradient(
+  //   180deg,
+  //   rgba(33, 37, 41, 1) 0%,
+  //   rgba(33, 37, 41, 1) 65%
+  // );
+  --footer-gradient: linear-gradient(
+    0deg,
+    rgba(39, 53, 84, 1) 0%,
+    rgba(33, 37, 41, 1) 65%
+  );
+}
+
+a {
+  color: var(--contrast-link-color);
+}

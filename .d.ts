@@ -1,0 +1,12 @@
+declare module '*.jpg';
+declare module '*.svg';
+declare module '*.png';
+declare module '*.jpeg';
+declare module '*.gif';
+declare module '*.ico';
+declare module '*.json';
+declare module '*.module.css';
+declare module '*.css';
+declare module 'react-use-flexsearch';
+declare module 'gatsby-plugin-dark-mode';
+declare module 'react-google-recaptcha';

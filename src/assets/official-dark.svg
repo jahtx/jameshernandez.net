@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="darkIconSvg" viewBox="0 0 677 667" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" >
+    <g transform="matrix(1,0,0,1,-209,-36)">
+        <g id="off" transform="matrix(1,0,0,1,142.94,-30.5689)">
+            <path d="M400,733.333C584.095,733.333 733.333,584.095 733.333,400C733.333,215.905 584.095,66.667 400,66.667C215.905,66.667 66.667,215.905 66.667,400C66.667,584.095 215.905,733.333 400,733.333ZM400,683.333L400,116.667C556.481,116.667 683.333,243.519 683.333,400C683.333,556.481 556.481,683.333 400,683.333Z" />
+        </g>
+    </g>
+</svg>

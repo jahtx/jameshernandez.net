@@ -1,0 +1,8 @@
+@import 'styles/dominant/bootstrap-custom.scss';
+
+.artSegmentList {
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+}

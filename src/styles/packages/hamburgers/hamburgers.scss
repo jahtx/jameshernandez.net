@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@import 'styles/variables/gatsby-template.scss';
+
+$hamburger-padding-x: 5px;
+$hamburger-padding-y: 5px;
+$hamburger-layer-width: 30px !default;
+$hamburger-layer-height: 4px !default;
+$hamburger-layer-spacing: 4px !default;
+$hamburger-layer-color: var(--primary-contrast-color);
+$hamburger-hover-opacity: 0.8;
+
+$hamburger-layer-border-radius: 4px !default;
+$hamburger-hover-opacity: 0.7 !default;
+$hamburger-active-layer-color: $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+
+$hamburger-hover-use-filter: false !default;
+$hamburger-hover-filter: opacity(50%) !default;
+$hamburger-active-hover-filter: $hamburger-hover-filter !default;
+
+$hamburger-types: (spin) !default;
+
+@import './_base.scss';
+
+@import './_spin.scss';

@@ -1,0 +1,27 @@
+@import 'styles/dominant/bootstrap-custom.scss';
+@import 'styles/variables/gatsby-template.scss';
+
+.job {
+  border: 1px solid var(--secondary-contrast-color);
+  border-radius: 0.7rem;
+  padding: 1rem 1rem 0 1rem;
+  &:last-child {
+    margin-bottom: 2rem;
+  }
+}
+.clientSection {
+  padding-bottom: 0.2rem;
+  &:not(:first-child) {
+    border-top: 1px solid grey;
+    padding-top: 1rem;
+  }
+}
+.listSection {
+  flex-direction: column;
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+  }
+  &__box {
+    width: 100%;
+  }
+}

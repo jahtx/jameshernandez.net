@@ -1,0 +1,14 @@
+@import 'styles/dominant/bootstrap-custom.scss';
+
+.imageColumn {
+  flex-basis: 33%;
+  max-width: 33%;
+  @include media-breakpoint-up(sm) {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  @include media-breakpoint-up(lg) {
+    flex-basis: 20%;
+    max-width: 20%;
+  }
+}

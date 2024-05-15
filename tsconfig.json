@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "esnext"],
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "baseUrl": "src",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "inlineSources": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "sourceMap": true,
+    "sourceRoot": "/",
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/static/*": ["./static/*"]
+    },
+    "types": ["node", "@testing-library/jest-dom"]
+  },
+  "exclude": ["node_modules"],
+  "include": [
+    "./src",
+    "./src/**/*",
+    "./gatsby-node.ts",
+    "./gatsby-config.ts",
+    "./plugins/**/*",
+    ".d.ts",
+    "gatsby-types.d.ts"
+  ]
+}

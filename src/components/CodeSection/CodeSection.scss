@@ -1,0 +1,47 @@
+// Imports
+@import 'styles/variables/main-colors.scss';
+@import 'styles/variables/gatsby-template.scss';
+
+// Styles for code areas and syntax highlighting
+.codeArea {
+  .gatsby-highlight {
+    pre {
+      overflow: auto; // Use auto instead of scroll for better compatibility
+      scrollbar-width: thin; // Standard scrollbar width
+      scrollbar-color: var(--secondary-contrast-color) transparent; // Customize scrollbar color
+
+      &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background-color: var(--secondary-contrast-color);
+        border: 2px solid transparent; // Optionally add a border
+      }
+    }
+  }
+
+  // Custom height classes for code blocks
+  @for $i from 10 through 30 {
+    &.code-h-#{$i} .gatsby-highlight pre {
+      max-height: #{$i}rem;
+    }
+  }
+}
+
+// Syntax highlighting pre styles
+pre[class*='language-'] {
+  position: relative;
+  margin: 5px 0;
+  padding: 1.75rem 1rem; // Adjusted padding
+
+  button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    // Additional styles for button
+  }
+}

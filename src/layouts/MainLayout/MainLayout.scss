@@ -1,0 +1,20 @@
+@import 'styles/variables/main-colors.scss';
+@import 'styles/variables/gatsby-template.scss';
+
+.outermostWrapper {
+  min-height: 100vh;
+  background-color: var(--primary-background);
+}
+
+div.mainContainer {
+  margin-bottom: 3em;
+}
+
+.darkToggleLine {
+  margin: 0.6em 0 0 0;
+}
+
+.mainChildrenArea {
+  color: var(--primary-contrast-color);
+  background-color: var(--primary-background);
+}

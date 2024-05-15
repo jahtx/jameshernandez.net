@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="facebookIconSvg" className="specialIcon" viewBox="0 0 509 508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path id="iconfb" d="M509,254.5C509,113.94 395.06,0 254.5,0C113.94,0 0,113.94 0,254.5C0,373.86 82.17,474 193.02,501.51L193.02,332.27L140.54,332.27L140.54,254.5L193.02,254.5L193.02,220.99C193.02,134.36 232.22,94.21 317.26,94.21C333.39,94.21 361.21,97.38 372.59,100.54L372.59,171.04C366.58,170.41 356.15,170.09 343.19,170.09C301.46,170.09 285.33,185.9 285.33,227L285.33,254.5L368.46,254.5L354.18,332.27L285.33,332.27L285.33,507.14C411.35,491.92 509,384.62 509,254.5Z" style="fill-rule:nonzero;"/>
+</svg>

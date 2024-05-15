@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="sharpArrowSvg" viewBox="0 0 68 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-952,-67)">
+        <g id="doubleChevron">
+            <path d="M952.069,108.625L969.322,108.625L989.86,88.088L969.322,67.551L952.069,67.551L972.605,88.088L952.069,108.625Z" />
+            <path d="M981.35,108.625L998.603,108.625L1019.14,88.088L998.603,67.551L981.35,67.551L1001.89,88.088L981.35,108.625Z" />
+        </g>
+    </g>
+</svg>
