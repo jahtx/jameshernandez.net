@@ -18,6 +18,7 @@ import imageLibrary5 from './image-library-5row.jpg';
 import rowz from './rowz.jpg';
 import lightbox1 from './lightbox-ex.jpg';
 import CompBox from 'components/CompBox';
+import RepoBox from 'components/RepoBox/RepoBox';
 
 <CompBox techItems={["Node 18","React 18", "Gatsby 5", "TypeScript 5"]} />
 
@@ -315,3 +316,5 @@ modalImageSize="xlargeImageModal"
 />
 
 This tutorial is inspired by an [implementation](https://github.com/browniebroke/gatsby-image-gallery) of [react-image-lighthouse](https://www.npmjs.com/package/react-image-lightbox) by [Brownie Broke](https://github.com/browniebroke/gatsby-image-gallery). 
+
+<RepoBox><a href="https://github.com/jahtx/img-gallery-lightbox">Image Gallery Lightbox</a></RepoBox>

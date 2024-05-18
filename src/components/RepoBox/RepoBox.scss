@@ -1,0 +1,19 @@
+@import 'styles/variables/gatsby-template.scss';
+
+@mixin repoBoxStyles {
+  padding: 1rem;
+  font-size: 0.8rem;
+  border-style: dashed;
+}
+
+.repoBox {
+  @include repoBoxStyles;
+  background-color: $gray-300;
+  border-color: $gray-500;
+}
+
+.dark-repoBox {
+  @include repoBoxStyles;
+  background-color: $gray-800;
+  border-color: $gray-700;
+}

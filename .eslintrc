@@ -40,13 +40,6 @@
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-var-requires": "off",
     "quotes": "off",
-    "@typescript-eslint/quotes": [
-      2,
-      "backtick",
-      {
-        "avoidEscape": true
-      }
-    ],
     "@typescript-eslint/no-unused-vars": [2, { "argsIgnorePattern": "^_" }],
     "jsx-a11y/rule-name": "warn"
   },

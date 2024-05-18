@@ -16,6 +16,7 @@ import CodeSection from 'components/CodeSection';
 import BetterImageModal from 'components/BetterImageModal';
 import CompBox from 'components/CompBox';
 
+
 <CompBox techItems={["Node 18","React 18", "Gatsby 5", "TypeScript 5"]} />
 
 <H2ThemeWrapper>Using an MDX Template</H2ThemeWrapper>
