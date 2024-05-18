@@ -16,7 +16,7 @@ import CodeSection from 'components/CodeSection';
 import BetterImageModal from 'components/BetterImageModal';
 import imageLibrary5 from './image-library-5row.jpg';
 import rowz from './rowz.jpg';
-import lightbox1 from './lightbox-ex.jpg';
+import monkeys from './monkeys.jpg';
 import CompBox from 'components/CompBox';
 import RepoBox from 'components/RepoBox/RepoBox';
 
@@ -172,13 +172,11 @@ From our initial page, we can import `react-image-lightbox` and its correspondin
 <CodeSection height='30' darkTheme="prism-coldark-dark" lightTheme="prism-ghcolors">
 ```tsx
 import React, { useState } from 'react';
-import MainLayout from 'layouts/MainLayout';
-import { Breadcrumb } from 'react-bootstrap';
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import ImgColWrapper from '../wrappers/ImageColWrapper';
 import Lightbox from 'react-image-lightbox';
-import ImgColWrapper from 'wrappers/ImageColWrapper';
-import * as LightboxCSS from 'styles/packages/lightbox/lightbox.css';
+import * as LightboxCSS from '@/styles/lightbox/lightbox.css';
 import styled from 'styled-components';
 
 interface CompPageProps {
@@ -219,15 +217,11 @@ const CompPage: React.FC = ({
   };
 
   return (
-    <MainLayout>
+    <div>
       <div className="homemade-container-sm mx-auto d-flex flex-column align-items-center">
         <div className="inner-container">
-          <Breadcrumb>
-            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-            <Breadcrumb.Item active>Composites</Breadcrumb.Item>
-          </Breadcrumb>
           <hr className="m-0" />
-          <h1 className="pt-4">Composites</h1>
+          <h1 className="pt-4">Lightbox Example</h1>
           <div className="pt-3">
             <div
               className="d-flex flex-wrap"
@@ -270,7 +264,7 @@ const CompPage: React.FC = ({
           </div>
         </div>
       </div>
-    </MainLayout>
+    </div>
   );
 };
 
@@ -278,7 +272,7 @@ export default CompPage;
 
 export const portfolioQuery = graphql`
   query CompImages {
-    allFile(filter: { relativeDirectory: { eq: "portfolio" } }) {
+    allFile(filter: { relativeDirectory: { eq: "lightbox" } }) {
       edges {
         node {
           id
@@ -297,7 +291,6 @@ export const portfolioQuery = graphql`
   }
 `;
 
-export { Head } from 'components/Head';
 
 ```
 </CodeSection>
@@ -305,7 +298,7 @@ export { Head } from 'components/Head';
 The Lightbox defaults still work quite nicely, so when we click on each image, or Lightbox should work quite well.
 
 <BetterImageModal 
-imageUrlFromFolder={lightbox1}
+imageUrlFromFolder={monkeys}
 title="Image Library"
 initialSize="20rem"
 frameStyles="p-3"
