@@ -31,6 +31,13 @@ const PortData: PortDataProps[] = [
     slug: '/portfolio/usaaGeo',
     backImage: 'usaa-back',
   },
+  {
+    title: 'Promotions Board for Military Organization',
+    bestDescription:
+      'Revamped a promotions application from legacy tech by replicating features and adding new requirements as specified by a promotions board. Applied a complete User Experience process in a SCRUM environment.',
+    slug: '/article/military',
+    backImage: 'mil-back',
+  },
 ];
 const SigmaSegment = () => {
   const items = PortData;
