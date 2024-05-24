@@ -1,26 +1,5 @@
 @import 'styles/variables/gatsby-template.scss';
 
-.initialPostSize {
-  &__mobileComp {
-    width: 6rem;
-    height: 18rem;
-    object-fit: cover;
-  }
-
-  &__desktopComp {
-    width: 15rem;
-    height: 18rem;
-    object-fit: cover;
-  }
-  &--universal {
-    // cursor: pointer;
-    object-position: top;
-    img {
-      object-position: top;
-    }
-  }
-}
-
 div.modal-fullscreen-lg-down div.modal-content {
   border-radius: var(--bs-modal-inner-border-radius);
 }

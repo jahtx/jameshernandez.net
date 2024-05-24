@@ -1,13 +1,13 @@
 ---
 date: '2024-01-02'
-title: 'Promotions Board for Military Organization'
+title: 'Promotions Board for Military Branch'
 tags: ['design', 'ux', 'wireframes', 'main']
 slug: military
 featuredImage: military.jpg
 author: James A. Hernandez
 status: portfolio
 showTOC: false
-description: 'Revamped a promotions application from legacy tech by replicating features and adding new requirements as specified by a promotions board. Applied a complete User Experience process in a SCRUM environment.'
+description: 'This effort revamped a promotions application from legacy tech by replicating features and adding new requirements as specified by a promotions board. Applied a complete User Experience process in a SCRUM environment.'
 ---
 
 import H2ThemeWrapper from 'wrappers/H2ThemeWrapper';
@@ -17,6 +17,7 @@ import CompContainer from 'content/rbfcu/CompContainer';
 import InBoard from './in-board.jpg';
 import CreateBoard from './create-board.jpg';
 import SelectCandidates from './candidate-selection.jpg';
+import Session from './session.jpg';
 
 
 <H2ThemeWrapper>Synopsis</H2ThemeWrapper>
@@ -33,14 +34,13 @@ The following UX steps were undertaken for this effort:
 * User Testing
 
 
-
 <BetterImageModal 
 imageUrlFromFolder={InBoard}
 title="In-board"
 initialSize="40rem"
 frameStyles="p-3"
 border
-modalImageSize="largeImageModal"
+modalImageSize="xlargeImageModal"
 />
 
 
@@ -50,7 +50,7 @@ title="Create board"
 initialSize="40rem"
 frameStyles="p-3"
 border
-modalImageSize="largeImageModal"
+modalImageSize="xlargeImageModal"
 />
 
 
@@ -60,5 +60,15 @@ title="Select Candidates"
 initialSize="40rem"
 frameStyles="p-3"
 border
-modalImageSize="largeImageModal"
+modalImageSize="xlargeImageModal"
+/>
+
+
+<BetterImageModal 
+imageUrlFromFolder={Session}
+title="Session"
+initialSize="40rem"
+frameStyles="p-3"
+border
+modalImageSize="xlargeImageModal"
 />

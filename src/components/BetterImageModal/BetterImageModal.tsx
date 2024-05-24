@@ -9,7 +9,6 @@ import './BetterImageModal.scss';
 interface ImageModalProps {
   title: string;
   altInfo?: string;
-  initialPostSize: string;
   initialSize?: string;
   modalImageSize?: 'mediumImageModel' | 'largeImageModal' | 'xlargeImageModal';
   searchedGatsbyImage?: string;
@@ -27,7 +26,6 @@ interface ImageModalProps {
 const ImageModal: React.FC<ImageModalProps> = ({
   modalSize,
   centered,
-  initialPostSize,
   initialSize,
   modalImageSize,
   frameStyles,
@@ -82,7 +80,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
             {searchedGatsbyImage && imageData ? (
               <span onClick={handleShow}>
                 <GatsbyImage
-                  className={`initialPostSize--universal mw-100 ${initialPostSize}${
+                  className={`initialPostSize--universal mw-100 ${
                     border ? ' initial-image-border' : ''
                   }`}
                   style={{ width: initialSize }}
@@ -96,7 +94,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
                 onClick={handleShow}
                 style={{ width: initialSize }}
                 alt={altInfo || title}
-                className={`initialPostSize--universal mw-100 ${initialPostSize}${
+                className={`initialPostSize--universal mw-100 ${
                   border ? ' initial-image-border' : ''
                 }`}
               />
