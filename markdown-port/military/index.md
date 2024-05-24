@@ -15,6 +15,8 @@ import CodeSection from 'components/CodeSection';
 import BetterImageModal from 'components/BetterImageModal';
 import CompContainer from 'content/rbfcu/CompContainer';
 import InBoard from './in-board.jpg';
+import CreateBoard from './create-board.jpg';
+import SelectCandidates from './candidate-selection.jpg';
 
 
 <H2ThemeWrapper>Synopsis</H2ThemeWrapper>
@@ -35,6 +37,26 @@ The following UX steps were undertaken for this effort:
 <BetterImageModal 
 imageUrlFromFolder={InBoard}
 title="In-board"
+initialSize="40rem"
+frameStyles="p-3"
+border
+modalImageSize="largeImageModal"
+/>
+
+
+<BetterImageModal 
+imageUrlFromFolder={CreateBoard}
+title="Create board"
+initialSize="40rem"
+frameStyles="p-3"
+border
+modalImageSize="largeImageModal"
+/>
+
+
+<BetterImageModal 
+imageUrlFromFolder={SelectCandidates}
+title="Select Candidates"
 initialSize="40rem"
 frameStyles="p-3"
 border

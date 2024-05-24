@@ -10,7 +10,9 @@ export const AdvancedThemeContext = createContext<
 >(undefined);
 
 const AdvancedThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  // to change default, false is light, true is dark
+  // also change gatsby-ssr.tsx
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     const newDarkModeState = !isDarkMode;
