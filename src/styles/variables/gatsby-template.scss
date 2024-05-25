@@ -81,7 +81,7 @@ $DARKMODE_Tertiary-contrast: $gray-500;
 
 // backgrounds
 
-$DARKMODE_Primary-bckg: $gray-900;
+$DARKMODE_Primary-bckg: #1d1e28;
 $DARKMODE_Secondary-bckg: $gray-800;
 $DARKMODE_Tertiary-bckg: $gray-700;
 
@@ -147,7 +147,7 @@ body.dark {
   --header-gradient: linear-gradient(
     180deg,
     rgba(39, 53, 84, 1) 0%,
-    rgba(33, 37, 41, 1) 65%
+    $DARKMODE_Primary-bckg 65%
   );
   // --header-gradient: linear-gradient(
   //   180deg,
@@ -157,7 +157,7 @@ body.dark {
   --footer-gradient: linear-gradient(
     0deg,
     rgba(39, 53, 84, 1) 0%,
-    rgba(33, 37, 41, 1) 65%
+    $DARKMODE_Primary-bckg 65%
   );
 }
 

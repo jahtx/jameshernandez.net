@@ -17,7 +17,9 @@ import CompContainer from 'content/rbfcu/CompContainer';
 import InBoard from './in-board.jpg';
 import CreateBoard from './create-board.jpg';
 import SelectCandidates from './candidate-selection.jpg';
+import ManageBallots from './manage-ballots.jpg';
 import Session from './session.jpg';
+import CalcBallots from './calc-ballots.png';
 
 
 <H2ThemeWrapper>Synopsis</H2ThemeWrapper>
@@ -68,6 +70,15 @@ modalImageSize="xlargeImageModal"
 imageUrlFromFolder={Session}
 title="Session"
 initialSize="40rem"
+frameStyles="p-3"
+border
+modalImageSize="xlargeImageModal"
+/>
+
+<BetterImageModal 
+imageUrlFromFolder={CalcBallots}
+title="Calculate Ballots"
+initialSize="50rem"
 frameStyles="p-3"
 border
 modalImageSize="xlargeImageModal"

@@ -32,7 +32,7 @@ const PortData: PortDataProps[] = [
     backImage: 'usaa-back',
   },
   {
-    title: 'Promotions Board for Military Organization',
+    title: 'Promotions Board for Military Branch',
     bestDescription:
       'Revamped a promotions application from legacy tech by replicating features and adding new requirements as specified by a promotions board. Applied a complete User Experience process in a SCRUM environment.',
     slug: '/article/military',
