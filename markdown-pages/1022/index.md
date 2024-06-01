@@ -136,7 +136,7 @@ export { AdvancedThemeProvider, useTheme };
 This code does two things. It changes the root class of `body` to `dark` on and off, and also it allows you to use the `isDarkMode` variable in any other part of your application you choose to wrap with `AdvancedThemeProvider`. This can be useful if you are using Bootstrap Components that change their dark-mode properties on something other than a CSS class, such as `data-bs-theme`.
 
 <CodeSection height='50' darkTheme="prism-coldark-dark" lightTheme="prism-ghcolors">
-```tsx
+```tsx{7,12}
 import { Form } from 'react-bootstrap';
 import { AdvancedThemeContext } from 'contexts/AdvancedThemeContext';
 

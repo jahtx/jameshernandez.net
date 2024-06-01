@@ -18,6 +18,9 @@
     -ms-hyphens: none;
     hyphens: none;
   }
+  .gatsby-highlight-code-line {
+    background-color: #1f3147;
+  }
 
   pre[class*='language-']::selection,
   pre[class*='language-'] ::selection,

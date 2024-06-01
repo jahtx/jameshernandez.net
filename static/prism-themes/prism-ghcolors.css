@@ -37,6 +37,9 @@
   code[class*='language-'] ::selection {
     background: #b3d4fc;
   }
+  .gatsby-highlight-code-line {
+    background-color: #e1efff;
+  }
 
   /* Code blocks */
   pre[class*='language-'] {

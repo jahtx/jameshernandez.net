@@ -43,7 +43,7 @@ This is definitely not a one size fits all solution, but it's worth documenting 
 The first item is to add a `baseUrl` setting for your root directory, which in this case is `src`. You must also list `src` as an `include`.
 
 <CodeSection height='20' darkTheme="prism-coldark-dark" lightTheme="prism-ghcolors">
-```json
+```json{13,15}
 // tsconfig.json
 {
   "compilerOptions": {
@@ -70,10 +70,10 @@ The first item is to add a `baseUrl` setting for your root directory, which in t
 
 <H2>Webpack Settings</H2>
 
-I'm always tricked into thinking this is all I need, but when I start the Webpack development server, I get a nasty error message that it cannot find my component. So now we must go into `webpack.config.ts` and make sure we account for it here.
+I'm always tricked into thinking this is all I need, but when I start the Webpack development server, I get a nasty error message that it cannot find my component. So now we must go into `webpack.config.ts` and make sure we account for it in the `resolve: {modules:` section.
 
 <CodeSection height='20' darkTheme="prism-coldark-dark" lightTheme="prism-ghcolors">
-```ts
+```tsx{3}
 // webpack.config.ts
   resolve: {
     modules: ['src', 'node_modules'],
