@@ -167,7 +167,7 @@ export default FormThemeWrapper;
 I then create a DarkMode component I will later insert into my Top Banner. 
 
 <CodeSection height='50' darkTheme="prism-coldark-dark" lightTheme="prism-ghcolors">
-```tsx
+```tsx{6}
 import React from 'react';
 import DarkModeIcon from 'assets/official-dark.svg';
 import { useTheme } from 'contexts/AdvancedThemeContext';
@@ -201,7 +201,7 @@ const DarkStateToggle: React.FC = () => {
 The last point, if you'd like to default the app for dark mode, the easiest way to add it is to create a `gatsby-ssr.tsx` file and add it here.
 
 <CodeSection height='50' darkTheme="prism-coldark-dark" lightTheme="prism-ghcolors">
-```tsx
+```tsx{4}
 exports.onRenderBody = ({ setBodyAttributes, setHtmlAttributes }) => {
   setHtmlAttributes({ lang: 'en' });
    setBodyAttributes({

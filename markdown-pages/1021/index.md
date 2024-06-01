@@ -56,7 +56,7 @@ const TopAdBannerData: TopAdBannerDataProps[] = [
 Then have it repeat in a function in the HTML section. Notice that we'll use ARIA to designate the list as a menu. (For this example, we are using an animated hamburger icon from [Jonsuh](https://github.com/jonsuh/hamburgers)).
 
 <CodeSection height='20' darkTheme="prism-coldark-dark" lightTheme="prism-ghcolors">
-```tsx 
+```tsx{29-43}
 // create a full menu enclosure
 <div className="adNavAnchor position-relative align-items-center"> 
 // insert your favorite hamburger menu icon
@@ -85,11 +85,10 @@ Then have it repeat in a function in the HTML section. Notice that we'll use ARI
     role="menu"
     aria-labelledby="menubutton"
   >
-    {items.map((item) => { // menu is created
-      const id = 'id' + Math.random().toString(16).slice(2); // unique identifier
+    {items.map((item, index) => { // menu is created
       const { menuItem, url } = item;
       return (
-        <li key={id} role="presentation">
+        <li key={index} role="presentation">
           <a
             className="d-block"
             href={url}
