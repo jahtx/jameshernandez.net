@@ -36,7 +36,7 @@ and Front-end Developer</title>
 ```
 </CodeSection>
 
-Nice! For good measure, make sure you wrap the entire thing in an `h1` tag so accessibiilty tools know it's the primary header.
+Nice! For good measure, make sure you wrap the entire thing in an `h1` tag so accessibilty tools know it's the primary header.
 
 <CodeSection height='20' darkTheme="prism-coldark-dark" lightTheme="prism-ghcolors">
 ```html

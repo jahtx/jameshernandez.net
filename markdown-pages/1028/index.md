@@ -21,7 +21,7 @@ import CompBox from 'components/CompBox';
 
 <H2>Relative Paths are Confusing</H2>
 
-How many directories deep is the component you are working with? If your code is littered with `import` paths like this, you are defiinitely looking for relief.
+How many directories deep is the component you are working with? If your code is littered with `import` paths like this, you are definitely looking for relief.
 
 <CodeSection height='20' darkTheme="prism-coldark-dark" lightTheme="prism-ghcolors">
 ```tsx

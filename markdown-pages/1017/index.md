@@ -85,6 +85,7 @@ border
 
 Select an AWS Region closest to you or in your time zone.
 
+Name your bucket the URL of your website, like mywebsite.com.
 
 Deselect 'Block all public access' and click acknowledgement below.
 
@@ -126,6 +127,8 @@ modalImageSize="mediumImageModal"
 frameStyles="p-3"
 border
 />
+
+Go to Permissions > Bucket Policy.
 
 Select Bucket policy, and use this template for a Policy:
 
