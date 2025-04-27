@@ -1,3 +1,30 @@
+
+
+##  My Personal Portfolio Website
+James Hernandez
+
+> Based on [Starter Template Gatsby TypeScript Starter](https://github.com/jpedroschmitz/gatsby-starter-ts).
+
+##  Features for this Gatsby Repo
+
+Additional Features:
+
+- blog pagination
+- tags pages and sort by tag
+- search
+- contact page using Formspree
+- Bootstrap 5 integration
+- Bootstrap React integration
+- use of MDX instead of Remark Transformation
+- use of CreateContext to implement Dark Mode
+- SVG integration
+- RSS Feed
+
+
+
+# Starter Template README
+
+(Original content below...)
 <p align="center">
   <img src="https://user-images.githubusercontent.com/26466516/169722691-77a6ca86-df54-4a0e-b952-48c3f3ed7526.png" alt="Gatsby TypeScript Starter">
 </p>
