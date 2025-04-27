@@ -48,7 +48,6 @@ const config: GatsbyConfig = {
         display: 'swap',
       },
     },
-    `gatsby-plugin-pnpm`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-build-date`,

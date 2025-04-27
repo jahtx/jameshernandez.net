@@ -27,7 +27,7 @@
     "./gatsby-node.ts",
     "./gatsby-config.ts",
     "./plugins/**/*",
-    ".d.ts",
-    "gatsby-types.d.ts"
+    "./.d.ts",
+    "./gatsby-types.d.ts"
   ]
 }
