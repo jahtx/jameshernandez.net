@@ -21,36 +21,9 @@ Additional Features:
 - RSS Feed
 
 
-
-# Starter Template README
-
-(Original content below...)
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/26466516/169722691-77a6ca86-df54-4a0e-b952-48c3f3ed7526.png" alt="Gatsby TypeScript Starter">
-</p>
-
-<br />
-
-<div align="center"><strong>Non-opinionated TypeScript starter for Gatsby</strong></div>
-<div align="center">A TypeScript starter for Gatsby. No plugins and styling. Exactly the necessary to start.</div>
-
-<br />
-
-<div align="center">
-  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&style=flat-square&color=5e17eb&labelColor=000000" alt="PRs welcome!" />
-
-  <img alt="License" src="https://img.shields.io/github/license/jpedroschmitz/gatsby-starter-ts?style=flat-square&color=5e17eb&labelColor=000000">
-
-  <a href="https://twitter.com/intent/follow?screen_name=jpedroschmitz">
-    <img src="https://img.shields.io/twitter/follow/jpedroschmitz?style=flat-square&color=5e17eb&labelColor=000000" alt="Follow @jpedroschmitz" />
-  </a>
-</div>
-
-<div align="center">
-  <sub>Created by <a href="https://twitter.com/jpedroschmitz">João Pedro</a> with the help of many <a href="https://github.com/jpedroschmitz/gatsby-starter-ts/graphs/contributors">wonderful contributors</a>.</sub>
-</div>
-
-<br />
+## working notes
+* works with Node 18.20.8 and NPM 10.8.2
+* works with Node 22.21.1 and NPM 10.9.4
 
 ## Features
 
@@ -68,30 +41,11 @@ Additional Features:
 - ⚙️ EditorConfig - Consistent coding styles across editors and IDEs
 - 🗂 Path Mapping — Import components or images using the `@` prefix
 
-## Quick Start
-
-The best way to start with this template is using the [Gatsby CLI](https://www.gatsbyjs.com/docs/reference/gatsby-cli/).
-
-```
-npx gatsby new starter-ts https://github.com/jpedroschmitz/gatsby-starter-ts
-```
-
-### Development
-
-To start the project locally, run:
-
-```bash
-pnpm start
-```
-
-Open `http://localhost:8000` with your browser to see the result.
-
 ## Documentation
 
 ### Requirements
 
 - Node.js >= 18
-- pnpm 7
 
 ### Directory Structure
 
@@ -101,28 +55,7 @@ Open `http://localhost:8000` with your browser to see the result.
 - [`.husky`](.husky) — Husky configuration and hooks.<br>
 - [`src`](./src) — Application source code, including pages, components, styles.
 
-### Scripts
 
-- `pnpm start` — Starts the application in development mode at `http://localhost:8000`.
-- `pnpm build` — Compile your application and make it ready for deployment.
-- `pnpm serve` — Serve the production build of your site
-- `pnpm clean` — Wipe out the cache (`.cache` folder).
-- `pnpm type-check` — Validate code using TypeScript compiler.
-- `pnpm lint` — Runs ESLint for all files in the `src` directory.
-- `pnpm format` — Runs Prettier for all files in the `src` directory.
-- `pnpm test` — Run tests with Vitest.
-- `pnpm test:watch` — Run tests on watch mode.
-
-### Path Mapping
-
-TypeScript are pre-configured with custom path mappings. To import components or files, use the `@` prefix.
-
-```tsx
-import { Button } from '@/components/Button';
-
-// To import images or other files from the static folder
-import avatar from '@/static/avatar.png';
-```
 
 ### Switch to Yarn/npm
 
