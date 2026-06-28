@@ -4,12 +4,14 @@
 
 ### Added
 - Pagination to blog list pages.
-- New "Meet the Team" page.
 
 ### Changed
 - Updated to Gatsby 5.14
 - Updated multiple Gatsby plugins
 
+### Compiling
+- Compile using `npm run build`
+- run `nvm use 18` for `npm install` and `npm run build`
 
 ### Fixed
 - App now can compile on Macbook Air M4 chip
