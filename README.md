@@ -1,66 +1,241 @@
+# James Hernandez — Personal Portfolio
 
+Personal portfolio website for James Hernandez, built with Gatsby, React, and TypeScript.
 
-##  My Personal Portfolio Website
-James Hernandez
+Originally based on the [Gatsby TypeScript Starter](https://github.com/jpedroschmitz/gatsby-starter-ts) and expanded with portfolio, blog, search, theming, and other functionality.
 
-> Based on [Starter Template Gatsby TypeScript Starter](https://github.com/jpedroschmitz/gatsby-starter-ts).
+## Tech Stack
 
-##  Features for this Gatsby Repo
+- Gatsby 5
+- React 18
+- TypeScript
+- MDX
+- Bootstrap 5
+- React Bootstrap
+- Sass
+- Vitest
+- Testing Library
+- ESLint
+- Prettier
+- Husky
+- Commitlint
 
-Additional Features:
+## Site Features
 
-- blog pagination
-- tags pages and sort by tag
-- search
-- contact page using Formspree
+- Portfolio content
+- MDX-based blog
+- Blog pagination
+- Tags and filtering by tag
+- Local search
+- Contact form using Formspree
+- Dark mode using React Context
 - Bootstrap 5 integration
-- Bootstrap React integration
-- use of MDX instead of Remark Transformation
-- use of CreateContext to implement Dark Mode
-- SVG integration
-- RSS Feed
+- SVG support
+- RSS feed
+- Sitemap
+- Progressive Web App/offline support
+- Syntax highlighting with Prism
+- Gatsby image optimization
+- Google Analytics
 
+## Requirements
 
-## working notes
-* works with Node 18.20.8 and NPM 10.8.2
-* works with Node 22.21.1 and NPM 10.9.4
+Node.js 18 or newer.
 
-## Features
+The project includes an `.nvmrc` specifying Node 18.
 
-- ⚡️ Gatsby 5
-- ⚛️ React 18
-- ⛑ TypeScript
-- 🐐 Tests — Vitest and Testing Library out of the box
-- 📏 ESLint — To find and fix problems in your code
-- 💖 Prettier — Code Formatter for consistent style
-- 🐶 Husky — For running scripts before committing
-- 🚓 Commitlint — To make sure your commit messages follow the convention
-- 🖌 Renovate — To keep your dependencies up to date
-- 🚫 lint-staged — Run ESLint and Prettier against staged Git files
-- 👷 PR Workflow — Run Type Check & Linters on Pull Requests
-- ⚙️ EditorConfig - Consistent coding styles across editors and IDEs
-- 🗂 Path Mapping — Import components or images using the `@` prefix
+### Known Working Versions
 
-## Documentation
+The project has been tested successfully with:
 
-### Requirements
+| Node | npm |
+| --- | --- |
+| 18.20.8 | 10.8.2 |
+| 22.21.1 | 10.9.4 |
 
-- Node.js >= 18
+To use the version specified in `.nvmrc`:
 
-### Directory Structure
+```bash
+nvm use
+```
 
-- [`__helpers__`](./__helpers__/) — Helpers files for testing configuration.<br>
-- [`__mocks__`](./__mocks__/) — Mocks for testing.<br>
-- [`.github`](.github) — GitHub configuration including the CI workflow.<br>
-- [`.husky`](.husky) — Husky configuration and hooks.<br>
-- [`src`](./src) — Application source code, including pages, components, styles.
+Verify the active versions:
 
+```bash
+node -v
+npm -v
+```
 
+## Installation
 
-### Switch to Yarn/npm
+Install dependencies using the existing lockfile:
 
-This starter uses pnpm by default, but this choice is yours. If you'd like to switch to Yarn/npm, delete the `pnpm-lock.yaml` file, install the dependencies with Yarn/npm, change the CI workflow, Husky Git hooks to use Yarn/npm commands, and uninstall the `gatsby-plugin-pnpm` plugin (you also need to remove it from the `gatsby-config` file).
+```bash
+npm ci
+```
+
+Using `npm ci` is preferred when restoring or setting up the project because it installs the dependency versions recorded in `package-lock.json`.
+
+## Local Development
+
+Start the Gatsby development server:
+
+```bash
+npm run start
+```
+
+The development server runs on port `4000`.
+
+## Troubleshooting
+
+### Gatsby `.cache` Error
+
+This project has encountered a Gatsby startup issue where `gatsby develop` attempts to access `.cache` before the directory exists.
+
+The error looks similar to:
+
+```text
+ENOENT: no such file or directory, lstat
+'.../jameshernandez.net/.cache'
+```
+
+If this happens, manually create the directory:
+
+```bash
+mkdir -p .cache
+npm run start
+```
+
+Normally Gatsby manages `.cache` automatically, but creating it manually resolves this startup problem.
+
+### Clean Reset
+
+If Gatsby starts producing unusual cache, build, symlink, or dependency errors, reset the generated files and reinstall dependencies:
+
+```bash
+rm -rf node_modules .cache public
+npm ci
+mkdir -p .cache
+npm run start
+```
+
+This is the preferred general-purpose reset procedure for this project.
+
+The following directories are generated and can safely be removed when troubleshooting:
+
+- `node_modules`
+- `.cache`
+- `public`
+
+Do **not** delete `package-lock.json` when attempting to reproduce a previously working installation.
+
+### Restore Known-Good Dependencies
+
+To see commits that changed the dependency files:
+
+```bash
+git log -5 --oneline -- package.json package-lock.json
+```
+
+To restore `package.json` and `package-lock.json` from a known-good commit:
+
+```bash
+git restore --source=<commit-hash> -- package.json package-lock.json
+```
+
+Then perform a clean installation:
+
+```bash
+rm -rf node_modules .cache public
+npm ci
+mkdir -p .cache
+npm run start
+```
+
+Both `package.json` and `package-lock.json` should generally be restored together.
+
+## Project Structure
+
+```text
+.
+├── data/               # Site configuration and data
+├── markdown-key/       # MDX/Markdown content
+├── markdown-pages/     # MDX/Markdown content
+├── markdown-port/      # Portfolio content
+├── src/
+│   ├── components/     # React components
+│   ├── images/         # Site images and assets
+│   ├── pages/          # Gatsby pages
+│   └── ...
+├── static/             # Static assets copied directly to the build
+├── gatsby-browser.tsx
+├── gatsby-config.ts
+├── gatsby-node.ts
+├── gatsby-ssr.tsx
+├── package.json
+└── tsconfig.json
+```
+
+## Gatsby Configuration
+
+The site uses Gatsby plugins for functionality including:
+
+- MDX
+- Sass
+- image processing
+- sitemap generation
+- RSS feeds
+- local search
+- Google Analytics
+- offline support
+- SVG imports
+- Prism syntax highlighting
+
+Site-wide metadata and configuration are maintained in:
+
+```text
+data/siteConfig
+```
+
+The main Gatsby configuration is:
+
+```text
+gatsby-config.ts
+```
+
+## Code Quality
+
+The project includes:
+
+- **ESLint** for static analysis
+- **Prettier** for formatting
+- **Vitest** and **Testing Library** for testing
+- **Husky** for Git hooks
+- **Commitlint** for commit-message conventions
+- **lint-staged** for checking staged files
+- **EditorConfig** for consistent editor settings
+- **Renovate** for dependency updates
+
+## Path Aliases
+
+TypeScript path mapping is configured so components and other source files can be imported using aliases such as `@` rather than long relative paths.
+
+## Production Build
+
+Create a production build with:
+
+```bash
+npm run build
+```
+
+Gatsby generates the production site in:
+
+```text
+public/
+```
+
+The `public` directory is generated output and should not be edited manually.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information.
+This project is licensed under the MIT License. See [LICENSE.md](LICENSE.md) for details.
