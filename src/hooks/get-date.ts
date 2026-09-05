@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-export const getDate = () => {
+export const useGetDate = () => {
   const dateInfo = useStaticQuery(
     graphql`
       query {

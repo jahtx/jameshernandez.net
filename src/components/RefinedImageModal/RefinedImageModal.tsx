@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
 import { Button, Modal } from 'react-bootstrap';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { AdvancedThemeContext } from 'wrappers/AdvancedThemeContext';
 import MagGlassSvg from 'assets/mag.svg';
 
@@ -74,7 +72,7 @@ const RefinedImageModal: React.FC<RefinedImageModalProps> = ({
             )}
           </div>
           <Modal
-            centered={centered && centered === 'false' ? false : true}
+            centered={!(centered && centered === 'false')}
             show={show}
             onHide={handleClose}
             size={modalSize || undefined}

@@ -8,7 +8,7 @@ import { useSiteMetadata } from 'hooks/use-site-metadata';
 import { useFlexSearch } from 'react-use-flexsearch';
 import { Formik, Field, Form as FormikForm } from 'formik';
 
-const FourOhFour = ({ data: { localSearchPages, calIcon } }) => {
+const FourOhFour = ({ data: { localSearchPages } }) => {
   const { index, store } = localSearchPages;
   const [query, setQuery] = useState(null);
   const [isFormSubmit, setFormSubmit] = useState(false);
@@ -18,7 +18,7 @@ const FourOhFour = ({ data: { localSearchPages, calIcon } }) => {
     <MainLayout>
       <Container>
         <h1 className="text-center">
-          Oops! Looks like we don't have that page 🫤
+          Oops! Looks like we don&apos;t have that page 🫤
         </h1>
         <h2 className="mt-5">Search {title}</h2>
 
@@ -62,6 +62,7 @@ const FourOhFour = ({ data: { localSearchPages, calIcon } }) => {
                         className="normalLink"
                         href={'/' + result.slug}
                         target="_blank"
+                        rel="noreferrer"
                       >
                         {result.title}
                         <SharpLink className="sharpLinkIcon" />

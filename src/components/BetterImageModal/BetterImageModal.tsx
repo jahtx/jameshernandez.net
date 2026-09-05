@@ -111,7 +111,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
             )}
           </div>
           <Modal
-            centered={centered && centered === 'false' ? false : true}
+            centered={!(centered && centered === 'false')}
             show={show}
             onHide={handleClose}
             size={modalSize || undefined}

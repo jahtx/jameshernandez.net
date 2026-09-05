@@ -24,7 +24,6 @@ const MainSegment: React.FC = () => {
   `);
 
   const images = data.allFile.nodes;
-  const [lastImageName, setLastImageName] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
@@ -41,7 +40,6 @@ const MainSegment: React.FC = () => {
 
     const randomImage = selectRandomImage();
     setSelectedImage(randomImage);
-    setLastImageName(randomImage.name);
     localStorage.setItem('lastImageName', randomImage.name);
   }, [images]);
 
@@ -62,9 +60,9 @@ const MainSegment: React.FC = () => {
             <div className="mainBox__second">
               <span className="mainBox__hello text-center">Hello!</span>
               <p>
-                I'm a Product & Services UX Designer and Front-end Engineer in
-                the San Antonio area. I am passionate about solving complex app
-                design problems from conception to deployment to continuous
+                I&apos;m a Product & Services UX Designer and Front-end Engineer
+                in the San Antonio area. I am passionate about solving complex
+                app design problems from conception to deployment to continuous
                 improvement. During my career, I have contributed to efforts for
                 web projects for USAA, Accenture, Outside Analytics, RBFCU, the
                 U.S. Air Force, and the U.S. Department of Education.

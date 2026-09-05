@@ -1,8 +1,8 @@
 async function copyCode(block: HTMLPreElement, link: HTMLAnchorElement) {
   if (!block || !link) return; // Check if block or link is null or undefined
-  let code = block.querySelector('code');
+  const code = block.querySelector('code');
   if (!code) return; // Check if code is null or undefined
-  let text = code.innerText;
+  const text = code.innerText;
 
   await navigator.clipboard.writeText(text);
 
@@ -15,23 +15,23 @@ async function copyCode(block: HTMLPreElement, link: HTMLAnchorElement) {
 
 export function addCopyCodeFunctionality() {
   const copyButtonLabel = 'Copy Code';
-  let blocks = document.querySelectorAll('pre');
+  const blocks = document.querySelectorAll('pre');
 
   blocks.forEach((block) => {
     // only add link if browser supports Clipboard API
     if (navigator.clipboard) {
       // Create a div to contain the link
-      let div = document.createElement('div');
+      const div = document.createElement('div');
       div.className = 'copyLine d-flex justify-content-end w-100';
 
       // Create the link
-      let link = document.createElement('a');
+      const link = document.createElement('a');
 
       // Set the href attribute of the link
       link.href = '#'; // Replace '#' with the appropriate URL if needed
 
       // Create a text node for the link label
-      let textNode = document.createTextNode(copyButtonLabel);
+      const textNode = document.createTextNode(copyButtonLabel);
 
       // Append text node to link
       link.appendChild(textNode);

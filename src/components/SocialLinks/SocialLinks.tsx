@@ -34,7 +34,7 @@ const SocialLinks: React.FC = () => {
     if (localStorage.getItem('mastodon-instance')) {
       openMastodon();
     } else {
-      let instance = window.prompt('Please tell me your Mastodon instance');
+      const instance = window.prompt('Please tell me your Mastodon instance');
       if (instance) {
         localStorage.setItem('mastodon-instance', instance);
         openMastodon();

@@ -71,6 +71,7 @@ const SearchPage = ({ data }: PageProps<Queries.searchLookupQuery>) => {
                           className="normalLink"
                           href={'/' + postPath + '/' + result.slug}
                           target="_blank"
+                          rel="noreferrer"
                         >
                           {result.title}
                           <SharpLink className="sharpLinkIcon" />

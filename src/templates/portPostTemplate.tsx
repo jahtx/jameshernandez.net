@@ -6,7 +6,6 @@ import { addCopyCodeFunctionality } from 'components/CopyCode';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Container, Breadcrumb } from 'react-bootstrap';
 import { MDXProvider } from '@mdx-js/react';
-import _ from 'lodash';
 import 'styles/index.scss';
 import './blogPostTemplate.scss';
 

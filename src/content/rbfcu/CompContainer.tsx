@@ -24,8 +24,12 @@ interface Props {
   onClose?: () => void;
 }
 
-const CompContainer: React.FC<Props> = ({ onClose = () => {} }) => {
-  const data = rbfcuPortQuery();
+const CompContainer: React.FC<Props> = ({
+  onClose = () => {
+    // no-op default handler
+  },
+}) => {
+  const data = useRbfcuPortQuery();
   const [index, setIndex] = useState<number>(0);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isTransitioning, setIsTransitioning] = useState<boolean>(false);
@@ -204,7 +208,7 @@ const CompContainer: React.FC<Props> = ({ onClose = () => {} }) => {
 
 export default CompContainer;
 
-export const rbfcuPortQuery = (): ImageQueryResult => {
+export const useRbfcuPortQuery = (): ImageQueryResult => {
   const data: ImageQueryResult = useStaticQuery(
     graphql`
       query rbfcuImages {

@@ -1,5 +1,5 @@
 import MainLayout from 'layouts/MainLayout';
-import { Container, Breadcrumb } from 'react-bootstrap';
+import { Breadcrumb } from 'react-bootstrap';
 import { PageProps } from 'gatsby';
 import TechUsed from 'components/TechUsed';
 import resumeFile from 'assets/official-resume.json';

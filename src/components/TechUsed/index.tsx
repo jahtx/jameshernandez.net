@@ -1,2 +1,2 @@
-export * from "./TechUsed";
-export { default } from "./TechUsed";
+export * from './TechUsed';
+export { default } from './TechUsed';

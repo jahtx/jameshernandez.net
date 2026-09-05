@@ -18,10 +18,13 @@
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
     "standard",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
   "rules": {
     "prettier/prettier": "error",
+    "no-undef": "off",
+    "no-unused-vars": "off",
     "react/prop-types": "off",
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
@@ -40,8 +43,7 @@
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-var-requires": "off",
     "quotes": "off",
-    "@typescript-eslint/no-unused-vars": [2, { "argsIgnorePattern": "^_" }],
-    "jsx-a11y/rule-name": "warn"
+    "@typescript-eslint/no-unused-vars": [2, { "argsIgnorePattern": "^_" }]
   },
   "settings": {
     "import/resolver": {

@@ -83,7 +83,7 @@ const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
               <h1>{frontmatter.title}</h1>
               <div className="d-flex justify-content-between">
                 {frontmatter.status &&
-                frontmatter.status == 'key-segment' ? null : (
+                frontmatter.status === 'key-segment' ? null : (
                   <>
                     <div>
                       <CalendarIcon className="calendarIcon" />

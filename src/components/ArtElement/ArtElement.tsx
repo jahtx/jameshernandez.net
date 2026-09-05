@@ -14,7 +14,7 @@ interface ArtElementsProps {
   slug: string;
   description?: string;
   shortLead?: string;
-  tags?: {};
+  tags?: object;
   date: string;
   addedStyles?: string;
   useDate?: boolean;

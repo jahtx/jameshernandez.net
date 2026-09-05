@@ -1,6 +1,6 @@
 import RSSLogo from 'assets/rss-logo-complex.svg';
 import { useSiteMetadata } from 'hooks/use-site-metadata';
-import { getDate } from 'hooks/get-date';
+import { useGetDate } from 'hooks/get-date';
 import MastadonSvg from 'assets/social/mastadon.svg';
 import TwitterXSvg from 'assets/social/x-twitter.svg';
 import GithubSvg from 'assets/github-logo.svg';
@@ -41,7 +41,7 @@ const FooterData = [
 
 export const UpsilonFooter = () => {
   const { copyrightHolder } = useSiteMetadata();
-  const { currentBuildDate } = getDate();
+  const { currentBuildDate } = useGetDate();
   const items = FooterData;
   const currentYear = currentBuildDate.currentDate;
 
@@ -73,6 +73,7 @@ export const UpsilonFooter = () => {
               <a
                 href="https://www.linkedin.com/in/jameshernandez/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span className="visually-hidden">Linked In</span>
                 <LinkedInSvg
@@ -81,7 +82,11 @@ export const UpsilonFooter = () => {
                   aria-hidden="true"
                 />
               </a>
-              <a href="https://github.com/jahtx" target="_blank">
+              <a
+                href="https://github.com/jahtx"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span className="visually-hidden">Github</span>
                 <GithubSvg
                   className="githubSocialIcon"
@@ -89,7 +94,11 @@ export const UpsilonFooter = () => {
                   aria-hidden="true"
                 />
               </a>
-              <a href="https://twitter.com/jah_uxdev" target="_blank">
+              <a
+                href="https://twitter.com/jah_uxdev"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span className="visually-hidden">X Media Account</span>
                 <TwitterXSvg
                   className="footerSocialIcon"
@@ -97,7 +106,11 @@ export const UpsilonFooter = () => {
                   aria-hidden="true"
                 />
               </a>
-              <a href="https://mastodon.social/@jameshernandez" target="_blank">
+              <a
+                href="https://mastodon.social/@jameshernandez"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span className="visually-hidden">Mastadon Account</span>
                 <MastadonSvg
                   className="footerSocialIcon"
