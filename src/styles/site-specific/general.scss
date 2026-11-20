@@ -221,7 +221,7 @@ a.button {
     max-width: 540px;
   }
   @include media-breakpoint-up(md) {
-    max-width: 720px;
+    max-width: 800px;
   }
   @include media-breakpoint-up(lg) {
     max-width: 960px;
