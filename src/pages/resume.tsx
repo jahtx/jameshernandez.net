@@ -4,8 +4,52 @@ import { PageProps } from 'gatsby';
 import resumeFile from 'assets/official-resume.json';
 import './resume.scss';
 
+interface WorkItem {
+  name?: string;
+  position?: string;
+  startDateClean?: string;
+  endDateClean?: string;
+  highlights?: string[];
+}
+
+interface EducationItem {
+  institution?: string;
+  area?: string;
+  studyType?: string;
+  startDate?: string;
+  endDate?: string;
+}
+
+interface SkillCategory {
+  name?: string;
+  keywords?: string[];
+}
+
+interface ResumeData {
+  basics: {
+    label?: string;
+    summary?: string;
+    coreStrengths?: string[];
+  };
+  work?: WorkItem[];
+  education?: EducationItem[];
+  skills?: SkillCategory[];
+}
+
+const resumeData = resumeFile as ResumeData;
+
+const getYear = (date?: string): string => (date ? date.slice(0, 4) : '');
+
+const joinDates = (start?: string, end?: string): string =>
+  [start, end].filter(Boolean).join(' - ');
+
 const ResumePage: React.FC<PageProps> = () => {
-  const resumeData = resumeFile;
+  const { basics } = resumeData;
+  const work = resumeData.work ?? [];
+  const education = resumeData.education ?? [];
+  const skills = (resumeData.skills ?? []).filter(
+    (skill) => skill.name && skill.keywords?.length,
+  );
 
   return (
     <MainLayout>
@@ -16,80 +60,87 @@ const ResumePage: React.FC<PageProps> = () => {
             <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
             <Breadcrumb.Item active>Résumé</Breadcrumb.Item>
           </Breadcrumb>
-
           <hr className="m-0" />
           <h1 className="pt-4">Résumé</h1>
-
           <div className="mt-4 mb-4">
-            <h2>{resumeData.basics.label}</h2>
-            <p>{resumeData.basics.summary}</p>
+            <h2>{basics.label}</h2>
+            {basics.summary}
           </div>
+          {basics.coreStrengths && basics.coreStrengths.length > 0 && (
+            <ul>
+              {basics.coreStrengths.map((coreStrength) => (
+                <li key={coreStrength}>{coreStrength}</li>
+              ))}
+            </ul>
+          )}
 
-          <ul>
-            {resumeData.basics.coreStrengths?.map(
-              (coreStrength: string, index: number) => (
-                <li key={index}>{coreStrength}</li>
-              ),
-            )}
-          </ul>
+          {work.length > 0 && (
+            <section className="resume-section">
+              <h2>Professional Experience</h2>
+              {work.map((job) => {
+                const dates = joinDates(job.startDateClean, job.endDateClean);
+                const highlights = job.highlights ?? [];
+                return (
+                  <div
+                    key={`${job.name}-${job.startDateClean}`}
+                    className="job mt-3"
+                  >
+                    <h3>{job.position}</h3>
+                    <h4 className="clean">
+                      {job.name}
+                      {dates && <> &nbsp;({dates})</>}
+                    </h4>
+                    {highlights.length > 0 && (
+                      <ul>
+                        {highlights.map((highlight, index) => (
+                          <li key={index}>{highlight}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                );
+              })}
+            </section>
+          )}
 
-          <h2>Experience</h2>
+          {education.length > 0 && (
+            <section className="resume-section">
+              <h2>Education</h2>
+              {education.map((item, index) => {
+                const credential = [item.studyType, item.area]
+                  .filter(Boolean)
+                  .join(', ');
+                const dates = joinDates(
+                  getYear(item.startDate),
+                  getYear(item.endDate),
+                );
+                return (
+                  <div key={index} className="mt-3">
+                    <h3>{item.institution}</h3>
+                    {credential && <p className="mb-1">{credential}</p>}
+                    {dates && <p className="mb-1">{dates}</p>}
+                  </div>
+                );
+              })}
+            </section>
+          )}
 
-          <div>
-            {resumeData.work?.map((workItem, index: number) => {
-              const {
-                name,
-                position,
-                highlights,
-                clients,
-                startDateClean,
-                endDateClean,
-              } = workItem;
-
-              return (
-                <div key={index} className="job mt-3">
-                  <h3>{position}</h3>
-
-                  <h4 className="clean">
-                    {name} &nbsp;({startDateClean} - {endDateClean})
-                  </h4>
-
-                  {/* Job highlights */}
-                  {highlights && highlights.length > 0 && (
-                    <ul className="job-highlights">
-                      {highlights.map((highlight: string, i: number) => (
-                        <li key={i}>{highlight}</li>
-                      ))}
-                    </ul>
-                  )}
-
-                  {/* Client projects */}
-                  {clients?.map((client, clientIndex: number) => (
-                    <div className="clientSection" key={clientIndex}>
-                      <h5>Client: {client.name}</h5>
-
-                      {client.highlights && client.highlights.length > 0 && (
-                        <ul className="job-highlights">
-                          {client.highlights.map(
-                            (highlight: string, i: number) => (
-                              <li key={i}>{highlight}</li>
-                            ),
-                          )}
-                        </ul>
-                      )}
-                    </div>
-                  ))}
+          {skills.length > 0 && (
+            <section className="resume-section">
+              <h2>Tools &amp; Technologies</h2>
+              {skills.map((skill) => (
+                <div key={skill.name} className="mt-3">
+                  <h3>{skill.name}</h3>
+                  <p>{skill.keywords?.join(', ')}</p>
                 </div>
-              );
-            })}
-          </div>
+              ))}
+            </section>
+          )}
           {/* END */}
         </div>
       </div>
     </MainLayout>
   );
 };
-
 export default ResumePage;
-
 export { Head } from 'components/Head';

@@ -19,29 +19,6 @@
       "Front-end Engineering with React and TypeScript",
       "AI-Assisted Design and Development"
     ],
-    "operatingSystems": [
-      "Figma",
-      "Sketch",
-      "Adobe Creative Cloud",
-      "Affinity Publisher",
-      "Storybook",
-      "Cursor",
-      "Claude",
-      "ChatGPT",
-      "Kiro"
-    ],
-    "languagesAndTech": [
-      "React",
-      "TypeScript",
-      "JavaScript",
-      "HTML / CSS / Sass",
-      "Mantine UI",
-      "Material UI",
-      "Redux",
-      "Git",
-      "Vite",
-      "Bootstrap"
-    ],
     "profiles": [
       {
         "network": "LinkedIn",
@@ -183,79 +160,69 @@
   "publications": [],
   "skills": [
     {
-      "name": "Enterprise UX Design",
-      "level": "",
-      "keywords": []
+      "name": "UX & Product Design",
+      "keywords": [
+        "Product Design",
+        "Enterprise UX",
+        "User Research",
+        "Interaction Design",
+        "Information Architecture",
+        "Workflow Design",
+        "Journey Mapping",
+        "Wireframing",
+        "Prototyping",
+        "Usability Testing",
+        "Accessibility",
+        "Design Systems",
+        "Stakeholder Collaboration"
+      ]
     },
     {
-      "name": "Product Design",
-      "level": "",
-      "keywords": []
+      "name": "Design & Prototyping Tools",
+      "keywords": [
+        "Figma",
+        "Sketch",
+        "Adobe Creative Cloud",
+        "Affinity Publisher",
+        "Storybook"
+      ]
     },
     {
-      "name": "Design Leadership",
-      "level": "",
-      "keywords": []
+      "name": "Front-End Technologies",
+      "keywords": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Sass",
+        "Redux",
+        "React Router",
+        "TanStack Query",
+        "Axios",
+        "Angular",
+        "Bootstrap",
+        "Mantine",
+        "Material UI (MUI)"
+      ]
     },
     {
-      "name": "Human-Centered Design",
-      "level": "",
-      "keywords": []
+      "name": "Development Tools & Platforms",
+      "keywords": [
+        "Git",
+        "GitLab",
+        "VS Code",
+        "Vite",
+        "Node.js",
+        "REST APIs",
+        "Socket.IO",
+        "AWS",
+        "Azure"
+      ]
     },
     {
-      "name": "Journey Mapping",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Complex Workflows",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "User Research",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Information Architecture",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Interaction Design",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Design Systems",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Accessibility",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Prototyping",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Stakeholder Collaboration",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Agile Development",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "AI-Assisted Design",
-      "level": "",
-      "keywords": []
+      "name": "AI-Assisted Design & Development",
+      "keywords": ["Kiro", "Claude Code", "Cursor", "GitHub Copilot", "ChatGPT"]
     }
   ],
   "languages": [
