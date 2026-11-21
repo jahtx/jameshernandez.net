@@ -1,33 +1,5 @@
-@import 'styles/dominant/bootstrap-custom.scss';
-@import 'styles/variables/gatsby-template.scss';
-
-.job {
-  border: 1px solid var(--secondary-contrast-color);
-  border-radius: 0.7rem;
-  padding: 1rem 1rem 0 1rem;
-  &:last-child {
-    margin-bottom: 2rem;
-  }
-}
-.resume-section {
-  margin-top: 2rem;
-  &:last-of-type {
-    margin-bottom: 2rem;
-  }
-}
-.clientSection {
-  padding-bottom: 0.2rem;
-  &:not(:first-child) {
-    border-top: 1px solid grey;
-    padding-top: 1rem;
-  }
-}
-.listSection {
-  flex-direction: column;
-  @include media-breakpoint-up(sm) {
-    flex-direction: row;
-  }
-  &__box {
-    width: 100%;
-  }
+// Bootstrap's border color does not follow the site's body.dark theme,
+// so point it at the site's theme-aware variable for this page only.
+.resume-page {
+  --bs-border-color: var(--secondary-contrast-color);
 }
